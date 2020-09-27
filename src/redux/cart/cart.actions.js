@@ -11,3 +11,8 @@ export const openCartDropdown = () => ({
 export const hideCartDropdown = () => ({
 	type: Types.CLOSE_CART_DROPDOWN,
 });
+
+export const addItem = (item) => ({
+	type: Types.ADD_ITEM,
+	payload: item,
+});
