@@ -8,10 +8,13 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
 import { selectCurrentUser } from './redux/user/user.selectors';
+
 import HomePage from './pages/hompage/hompage.component';
 import ShopPage from '../src/pages/shop/shop.component';
-import Header from './components/header/header.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
+import CheckoutPage from './pages/checkout/checkout.component';
+
+import Header from './components/header/header.component';
 
 import { setCurrentUser } from './redux/user/user.actions';
 class App extends Component {
@@ -47,6 +50,7 @@ class App extends Component {
 				<Switch>
 					<Route exact path="/" component={HomePage} />
 					<Route path="/shop" component={ShopPage} />
+					<Route path="/checkout" component={CheckoutPage} />
 					<Route
 						exact
 						path="/signin"
