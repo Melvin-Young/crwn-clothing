@@ -2,3 +2,5 @@ export const TOGGLE = 'TOGGLE_CART_HIDDEN';
 export const OPEN_CART_DROPDOWN = 'OPEN_CART';
 export const CLOSE_CART_DROPDOWN = 'CLOSE_CART';
 export const ADD_ITEM = 'ADD_ITEM';
+export const CLEAR_ITEM_FROM_CART = 'CLEAR_ITEM_FROM_CART';
+export const REMOVE_ITEM = 'REMOVE_ITEM';
